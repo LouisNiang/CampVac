@@ -1,0 +1,31 @@
+.h-wrapper{
+    background: var(--black);
+    color: white;
+}
+.h-container{
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: var(--secondary);
+}
+.h-menu{
+    gap: 2rem;
+}
+.h-menu:hover{
+    cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+    .h-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .h-menu {
+      margin-top: 20px;
+    }
+  
+    .h-menu a {
+      display: block;
+      margin-bottom: 10px;
+    }
+  }

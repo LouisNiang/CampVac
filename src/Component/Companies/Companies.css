@@ -1,0 +1,19 @@
+.c-container{
+    justify-content: space-around;
+    gap: 1rem;
+    background-color: white;
+}
+.c-container img{
+    width: 9rem;
+}
+@media screen and (max-width: 600px) {
+    .c-container {
+        flex-wrap: wrap; /* Pour les petits écrans, permettre le retour à la ligne des éléments */
+        justify-content: center; /* Centrer les éléments horizontalement */
+    }
+
+    .c-container img {
+        width: 100%; /* Pour les petits écrans, ajuster la largeur des images à 100% */
+        max-width: 150px; /* Limiter la largeur maximale des images */
+    }
+}
